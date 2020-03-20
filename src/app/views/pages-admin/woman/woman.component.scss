@@ -1,0 +1,16 @@
+table {
+    .fa-edit {
+        transition: all .5s ease-in-out;
+        cursor: pointer;
+        &:hover {
+            color: #080;
+        }
+    }
+    .fa-trash-alt {
+        transition: all .5s ease-in-out;
+        cursor: pointer;
+        &:hover {
+            color: red;
+        }
+    }
+}

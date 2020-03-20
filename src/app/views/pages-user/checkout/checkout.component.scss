@@ -1,0 +1,64 @@
+@import '../cart/cart.component.scss';
+/* Start section checkout */
+.checkout {
+    padding: $padding;
+    h5 {
+        margin-bottom: 20px;
+    }
+    .content-top {
+        width: 49%;
+        margin-right: 2%;
+        display: inline-block;
+    }
+    .content-bottom {
+        width: 49%;
+        display: inline-block;
+    }
+    p {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .content-endShopping {
+        border: 1px solid #EEE;
+        padding: 10px;
+        table {
+            width: 100%;
+            th {
+                border-bottom: 1px solid #EEE;
+                padding-bottom: 8px;
+            }
+            td {
+                padding: 10px 0;
+            }
+            
+        }
+        .total {
+            width: 93%;
+            font-weight: bold;
+            h6 {
+                display: inline-block;
+                width: 50%;
+            }
+            .p-total {
+                display: inline-block;
+                text-align: right;
+                width: 50%;
+
+            }
+        }
+        
+    }
+    @media (max-width: 991.98px) {
+        .content-endShopping {
+            margin-top: 12px;
+        }
+    }
+    .button {
+        width: 100%;
+        margin-top: 8px;
+        button {
+            width: 100%;
+        }
+    }
+}
+/* End section checkout */

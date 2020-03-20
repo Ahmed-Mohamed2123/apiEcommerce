@@ -1,0 +1,27 @@
+@import '../home/home.component.scss';
+/* info product */
+.infoProduct {
+    padding: $padding;
+    .content-top {
+        img {
+            width: 100%;
+        }
+    }
+    .content-info {
+        width: 100%;
+        input:first-child {
+            width: 49%;
+            margin-right: 2%;
+            display: inline-block;
+        }
+        input:last-child {
+            width: 49%;
+            display: inline-block;
+        }
+    }
+    button {
+        padding: 8px 12px;
+        margin-top: 20px;
+    }
+}
+/* info product */

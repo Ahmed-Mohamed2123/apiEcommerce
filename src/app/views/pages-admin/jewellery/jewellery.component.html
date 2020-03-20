@@ -1,0 +1,24 @@
+<table class="table mt-5 mb-5">
+  <thead class="thead-dark">
+    <tr>
+      <th>#</th>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Price</th>
+      <th>Rate</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let jewellery of manageJewellery; index as i">
+      <th scope="row">{{i + 1}}</th>
+      <td>{{jewellery.Text}}</td>
+      <td>{{jewellery.description}}</td>
+      <td>{{jewellery.price}}</td>
+      <td>{{jewellery.rate}}</td>
+      <td><i class="fas fa-edit"></i></td>
+      <td><i class="fas fa-trash-alt"></i></td>
+    </tr>
+  </tbody>
+</table>

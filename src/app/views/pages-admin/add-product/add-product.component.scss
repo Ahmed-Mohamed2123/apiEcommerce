@@ -1,0 +1,35 @@
+.addProduct {
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+    .content {
+        box-shadow: 0 0 10px #EEE;
+        padding: 10px;
+        input, textarea {
+            margin-bottom: 8px;
+        }
+        
+        input[type="file"] {
+            visibility: hidden;
+        }
+        
+        .image-preview {
+            height: 5rem;
+            margin: 1rem 0;
+            img {
+                height: 100%;
+            }
+        }
+        button {
+            margin-bottom: 8px;
+        }
+        select {
+            margin-bottom: 8px;
+        }
+    }
+}
+@media (max-width: 991.98px) {
+    .addProduct {
+        width: 100%;
+    }
+}

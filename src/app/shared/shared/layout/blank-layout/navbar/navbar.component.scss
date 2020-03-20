@@ -1,0 +1,103 @@
+$color-main: #3cb878;
+.top-menu {
+    background-color: #000;
+    color: #FFF;
+    font-size: 14px;
+    padding: 12px 0;
+    .content-top {
+        display: flex;
+        flex-wrap: wrap;
+        p:first-child {
+            padding-right: 8px;
+            position: relative;
+            margin-bottom: 0;
+        }
+        p:first-child::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 25%;
+            width: 1px;
+            height: 12px;
+            background-color: rgba(238, 238, 238, 0.658);
+        }
+        p:last-child {
+            padding-left: 8px;
+            margin-bottom: 0;
+        }
+    }
+    .content-bottom {
+        text-align: end;
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #FFF !important;
+    box-shadow: 0px 3px 10px #f3f3f3;
+   .container {
+    position: relative;
+    .content {
+        position: absolute;
+        top: 8px;
+        right: 0;
+        i {
+            margin-right: 12px;
+            cursor: pointer;
+            outline: none;
+        }
+    }
+    @media (max-width: 991.98px) {
+        .content {
+            right: 60px;
+        }
+    }
+    .navbar-brand {
+        span {
+            color: $color-main;
+            font-weight: bold;
+        }
+    }
+    .navbar-collapse {
+        ul {
+            .nav-link.active {
+                color: $color-main !important;
+            }
+        }
+    }
+   }
+}
+
+section {
+    position: relative;
+    background-color: $color-main;
+    .slider-right {        
+        background-color: $color-main;
+        position: absolute;
+        z-index: 999;
+        right: 0;
+        height: 280px;
+        width: 20%;
+        .active {
+            color: rgb(52, 79, 199) !important;
+        }
+        ul {
+            text-align: center;
+            position: relative;
+            top: 20%;
+            li {
+                a {
+                    color: #FFF;
+                }
+            }
+        }
+    }
+    @media (max-width: 991.98px) {
+        .slider-right {
+            width: 50%;
+        }
+    }    
+}

@@ -1,0 +1,31 @@
+<!-- Start Section Woman Products -->
+<div class="section-women">
+    <div class="container">
+        <div class="content-top">
+            <input type="text">
+            <i class="fas fa-search fa-1x"></i>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-lg-3" *ngFor="let women of womens">
+                <div class="conte">
+                    <div class="content">
+                        <img [src]="women.imagePath[0]">
+                        <div class="cont">
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-allergies" routerLink="/infoProduct"></i>
+                        </div>
+                    </div>
+                    <p class="bottom-p-one">{{women.title}}</p>
+                    <p class="bottom-p-two">${{women.price}}</p>
+                    <rating [(ngModel)]="women.rate" [max]="max" [readonly]="isReadonly"></rating>
+                </div>
+            </div>
+        </div>
+        
+        <pagination [totalItems]="bigTotalItems" [(ngModel)]="bigCurrentPage" [maxSize]="maxSize" class="pagination-sm"
+        [itemsPerPage]="itemsPerPage"  [boundaryLinks]="true" [rotate]="false"  (click)="getListGroups()"></pagination>
+
+    </div>
+</div>
+<!-- Start Section Woman Products (pageChange)="getPageFromService()" -->

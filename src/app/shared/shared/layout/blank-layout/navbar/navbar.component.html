@@ -1,0 +1,76 @@
+<div class="top-menu">
+  <div class="container">
+      <div class="row">
+          <div class="col-sm-6 col-xs-6">
+              <div class="content-top">
+                  <p>+1 123 456 789</p>
+                  <p>info@company.com</p>
+              </div>
+          </div>
+          <div class="col-sm-6 col-xs-6">
+              <div class="content-bottom">
+                  <p>+1 123 456 789</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<div class="container">
+  
+  <a class="navbar-brand" routerLink="/"><span>RENOSHOP</span>BEE</a>
+  <button (click)="menu()" class="navbar-toggler" type="button">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div [@menu]="current" class="navbar-collapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="women" routerLinkActive="active">Women</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="men" routerLinkActive="active">Men</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="kids" routerLinkActive="active">Kids</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="jewellery" routerLinkActive="active">Jewellery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="accessories" routerLinkActive="active">Accessories</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <i class="fas fa-shopping-cart" routerLink="/user/cart"></i>
+    <i class="fas fa-align-right" (click)="itemShow()"></i>
+  </div>
+</div>
+</nav>
+
+<section>
+  <div class="slider-right" [@toggle]="toggle">
+    <ul class="list-unstyled">
+      <li class="nav-item">
+        <a class="nav-link" (click)="itemShow()" routerLink="/auth/signup" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Sign up</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="itemShow()" routerLink="/auth/login" routerLinkActive="active">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="itemShow()" routerLink="/user/cart" routerLinkActive="active">Cart</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="itemShow()" routerLink="/user/checkout" routerLinkActive="active">Checkout</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="itemShow()" routerLink="/admin" routerLinkActive="active">Admin</a>
+      </li>
+    </ul>
+  </div>
+</section>

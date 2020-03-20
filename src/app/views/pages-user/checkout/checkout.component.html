@@ -1,0 +1,70 @@
+<!-- Start section checkout -->
+<div class="checkout">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Billing Details</h5>
+                <div class="content-top">
+                    <p>First Name</p>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="content-bottom">
+                    <p>Last Name</p>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="content">
+                    <p>Country</p>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="content">
+                    <p>Company name</p>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="content">
+                    <p>Address</p>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="content">
+                    <p>Postcode / Zip</p>
+                    <input type="number" class="form-control">
+                </div>
+                <div class="content">
+                    <p>Town / City</p>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="content-top">
+                    <p>Email Address</p>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="content-bottom">
+                    <p>Phone</p>
+                    <input type="number" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="content-endShopping">
+                    <table>
+                        <thead>
+                            <th>Product</th>
+                            <th>Total</th>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let check of checkout">
+                                <td>{{check.product}}</td>
+                                <td>{{check.total}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="total">
+                        <h6>Total</h6>
+                        <p class="p-total">$400</p>
+                    </div>
+                </div>
+                <div class="button">
+                    <button class="btn btn-success">Place Order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End section checkout -->

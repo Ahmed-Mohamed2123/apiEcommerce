@@ -1,0 +1,66 @@
+<section>
+    <div class="cart-table text-center">
+        <div class="container">
+            <table>
+                <thead>
+                    <td>Product image</td>
+                    <td>Product name</td>
+                    <td>Color & Size</td>
+                    <td>Quantity</td>
+                    <td>Price</td>
+                    <td>Total</td>
+                    <td>Delete</td>
+                </thead>
+                <tbody>
+                    <tr  *ngFor="let cart of carts">
+                        <th><img [src]="cart.src"></th>
+                        <th>{{cart.Text}}</th>
+                        <th>
+                            Color: {{cart.color}}<br>
+                            Size: {{cart.size}}
+                        </th>
+                        <th>
+                            <input type="number" [value]="cart.quantity">
+                        </th>
+                        <th>${{cart.price}}</th>
+                        <th>${{cart.total}}</th>
+                        <th><i class="far fa-trash-alt"></i></th>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="buttons mt-3">
+                <button class="update" type="submit">UPDATE CART</button>
+                <button class="btn btn-success" routerLink="/">CONTINUE SHOPPING</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="proceedToCheckout mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="content-top">
+                        <div class="left">
+                            <p>Subtotal</p>
+                            <p>Shopping</p>
+                        </div>
+                        <div class="right">
+                            <p>$450</p>
+                            <p>Free Shopping</p>
+                        </div>
+                        <hr>
+                        <div class="cont">
+                            <p>Total</p>
+                            <p>$450</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="content">
+                        <button class="btn btn-success">Proceed to checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

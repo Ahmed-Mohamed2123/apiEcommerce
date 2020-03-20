@@ -1,0 +1,174 @@
+<!-- Start Slider -->
+<div class="slider">
+    <div class="layout">
+        <div class="container">
+            <div class="content">
+                <h2 class="h1 one">THE BEST</h2>
+                <h2 class="h1 two">WOOCOMMERCE</h2>
+                <p>Lorem ipsum dolor sit amet, consecteture adipisicing elit, sed do eiusmod tempor inididunt ut lobore at dolore magna aliqua.</p>
+                <button>BUY NOW</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Slider -->
+
+<!-- Start Best Seller -->
+<div class="best-seller">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-lg-3">
+                <div class="position-relative">
+                    <div class="content-text">
+                        <h3>Best sellers</h3>
+                        <p class="one">The best productions from us</p>
+                        <p class="two">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3" *ngFor="let BestSeller of bestSeller">
+                <div class="conte">
+                    <div class="content">
+                        <img [src]="BestSeller.src">
+                        <div class="cont">
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-allergies" routerLink="/infoProduct"></i>
+                        </div>
+                    </div>
+                    <p class="bottom-p-one">{{BestSeller.Text}}</p>
+                    <p class="bottom-p-two">${{BestSeller.price}}</p>
+                    <!-- rate -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Best Seller -->
+
+<!-- Start Static Blocks -->
+<div class="static-blocks text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-lg-3">
+                <div class="content">
+                    <i class="fas fa-gem fa-2x"></i>
+                    <h4>Special offers</h4>
+                    <p>Shop Big Save Big</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="content">
+                    <i class="fas fa-paper-plane fa-2x"></i>
+                    <h4>Free delivery</h4>
+                    <p>On Orders Above $99</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="content">
+                    <i class="fas fa-retweet fa-2x"></i>
+                    <h4>30 Days Return</h4>
+                    <p>Policy We Offers</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="content">
+                    <i class="fas fa-rocket fa-2x"></i>
+                    <h4>Fastest Shipping</h4>
+                    <p>2 Days Express</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Static Blocks -->
+
+<!-- Start Categories -->
+<div class="categories text-center">
+    <div class="content">
+        <img src="../../../../../assets/categories/one.jpg" alt="one">
+    </div>
+    <div class="content center">
+        <img src="../../../../../assets/categories/two.jpg" alt="two">
+    </div>
+    <div class="content">
+        <img src="../../../../../assets/categories/three.jpg" alt="three">
+    </div>
+</div>
+<!-- End Categories -->
+
+<!-- Start Product List -->
+<div class="products-list">
+    <div class="container">
+        <div class="content-top text-center">
+            <h2>Featured Products</h2>
+            <p>Newest trends from top brands</p>
+        </div>
+        <div class="content-bottom">
+            <div class="row">
+                <div class="col-sm-6 col-lg-3" *ngFor="let FeaturedProducts of featuredProducts">
+                    <div class="conte">
+                        <div class="content">
+                            <img [src]="FeaturedProducts.src">
+                            <div class="cont">
+                                <i class="fas fa-shopping-cart"></i>
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-allergies" routerLink="/infoProduct"></i>
+                            </div>
+                        </div>
+                        <p class="bottom-p-one">{{FeaturedProducts.Text}}</p>
+                        <p class="bottom-p-two">${{FeaturedProducts.price}}</p>
+                        <!-- rate -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Product List -->
+
+<!-- Start Client -->
+<div class="client text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-lg-3">
+                <div class="content">
+                    <img src="../../../../../assets/client/one.svg" alt="one">
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="content">
+                    <img src="../../../../../assets/client/two.svg" alt="two">
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="content">
+                    <img src="../../../../../assets/client/three.svg" alt="three">
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="content">
+                    <img src="../../../../../assets/client/four.svg" alt="four">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Client -->
+
+<!-- Start Subscribe -->
+<div class="subscribe">
+    <div class="layout">
+        <div class="container text-center">
+            <div class="content-top">
+                <h2>Get Out Special Discount</h2>
+                <p>Donec eu tristique felis. Duis augue mi, auctor ut purus et, dignissim aliquet quam. <br>register your email for news and special offers</p>
+                <div class="content-bottom mt-4">
+                    <input type="email" placeholder="E-mail address" class="form-control">
+                    <button class="btn btn-success">GET COUPON NOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end Subscribe -->

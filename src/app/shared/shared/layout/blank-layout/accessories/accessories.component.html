@@ -1,0 +1,28 @@
+<!-- Start Section accessories Products -->
+<div class="section-accessories">
+    <div class="container">
+        <div class="content-top">
+            <input type="text">
+            <i class="fas fa-search fa-1x"></i>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-lg-3" *ngFor="let accessory of accessories">
+                <div class="conte">
+                    <div class="content">
+                        <img [src]="accessory.imagePath[0]">
+                        <div class="cont">
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-allergies" routerLink="/infoProduct"></i>
+                        </div>
+                    </div>
+                    <p class="bottom-p-one">{{accessory.Text}}</p>
+                    <p class="bottom-p-two">${{accessory.price}}</p>
+                    <!-- rate -->
+                </div>
+            </div>
+        </div>
+        <!-- pagination -->
+    </div>
+</div>
+<!-- Start Section accessories Products -->
